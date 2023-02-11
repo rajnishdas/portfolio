@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="author" content="Rajnish Das" />
+        <meta name="description" content="Rajnish Das39;s Personal Website" />
+        <meta name="keywords" content="Rajnish Das, Rajnish Das, software engineer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta itemprop="name" content="Rajnish Das" />
+       
+        <meta itemprop="description" content="Rajnish Das39;s Personal Website" />
+
+        <meta property="og:title" content="Rajnish Das" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Personal Website" />
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Rajnish Das | Personal Website" />
+        <meta property="og:locale" content="en_US" />
+
+        <title>Rajnish Das</title>
+        
+        <link rel="shortcut icon" href="assets/raj.svg" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+
+        <!-- ----------background music--------- -->
+        <audio id="background-music" autoplay loop hidden>
+            <source src="/home/lt-345/Desktop/v1-master/assets/forest.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            // function play()
+            // {
+            //     var myAudio = document.getElementById("background-music"); 
+            //     if(myAudio.paused) {
+            //     myAudio.play();
+            //     }
+            //     else {
+            //     myAudio.pause();
+            //     }
+            // }
+
+            // var audio = new Audio('/home/lt-345/Desktop/v1-master/assets/forest.mp3');
+            var audio = document.getElementById("background-music"); 
+            audio.oncanplay = function() {
+            if (document.getElementById("cena").checked) this.play()
+            }
+            function myfunction(el) {    
+                if (el.checked) {
+                audio.load();
+                } else {
+                audio.pause(); //pause audio
+                }
+            }            
+        </script>
+          
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="nav-item"><a class="nav-item-link hover" href="#hero">Home</a></div>
+                <div class="nav-item"><a class="nav-item-link hover" href="#about">About</a></div>
+                <div class="nav-item"><a class="nav-item-link hover" href="#projects">Projects</a></div>
+                <div class="nav-item"><a class="nav-item-link hover" href="#footer">Contact me</a></div>
+    
+    <!--------------for music on off--------------->
+                <!-- <label class="switch" for="audio-control" id="audio-label">
+                    <input type="checkbox" id="audio-control" checked>
+                    <span class="slider round"></span>
+                </label> -->
+
+                <label class="switch" id="audio-label">
+                    <input type="checkbox" id="audio-control" onchange="myfunction(this)"/>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-profile">
+                    <div class="hero-profile-img-wrapper"><img class="hero-profile-img" src="/home/lt-345/Desktop/v1-master/assets/Profile picture.png" /></div>
+                        <div class="hero-profile-content">
+                        <div class="hero-headline">Rajnish Das</div>
+                        <div class="hero-text">Software Engineer</div>
+                    </div>
+                    <div class="hero-icons">
+                        <a href="https://github.com/rajnishdascse" target="_blank" class="icon-link"><i class="fab fa-github"></i> </a>
+                        <a href="https://linkedin.com/in/rajnish-das-03b0a11a7/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <div>
+                        <h1 class="world">
+                            <span>Hey</span>
+                            <span>there!,</span>
+                            <span>Welcome</span>
+                            <span>to</span>
+                            <span>my</span>
+                            <span>corner</span>
+                            <span>of</span>
+                            <span>the</span>
+                            <span>Internet.</span>
+                            <span>Happy</span>
+                            <span>to</span>
+                            <span>see</span>
+                            <span>you</span>
+                            <span>here. &#129303</span>
+                          </h2>
+                    </div>
+                    <a class="arrow fa fa-arrow-down fa-3x" href="#about"></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- <button onclick="play()" type="button" class="play-btn"></button> -->
+        <div id="about" class="about">
+            <div class="container about-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">About me</div>
+                        <div class="about-card-group">
+                            <div class="about-card-wrapper">
+                                <div class="about-card">
+                                    <div class="about-card-icon-wrapper">
+                                        <div class="about-card-icon"><img style="vertical-align: middle;" src="/home/lt-345/Desktop/rajnish-website/assets/cs1.svg" /></div>
+                                    </div>
+                                    <div class="about-card-title">
+                                       <b>Computer Science Engineer</b>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <div class="about-card">
+                                    <div class="about-card-icon-wrapper">
+                                        <div class="about-card-icon"><img src="assets/well.svg" /></div>
+                                    </div>
+                                    <div class="about-card-title">
+                                        Studied at
+                                        <br />
+                                        <b>J.C Bose University Of Science & Technology</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <div class="about-card">
+                                    <div class="about-card-icon-wrapper">
+                                        <div class="about-card-icon"><img src="assets/code.svg" /></div>
+                                    </div>
+                                    <div class="about-card-title">
+                                        Software Engineer
+                                        <br />
+                                        <b>Software &middot; Machine Learning &middot; Web</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-card-wrapper">
+                                <div class="about-card">
+                                    <div class="about-card-icon-wrapper">
+                                        <div class="about-card-icon"><img src="/home/lt-345/Desktop/v1-master/assets/smile.webp" /></div>
+                                    </div>
+                                    <div class="about-card-title">
+                                        Interests
+                                        <br />
+                                        <b>Music &middot; Riding &middot; Dance</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="about-section">
+                    <div class="about-content">
+                      <p class="about-text">I am a highly motivated computer science engineering graduate with a passion for problem-solving and creating innovative technology solutions. I have a strong foundation in software engineering fundamentals, including data structures, algorithms, object-oriented programming, and database systems, and am proficient in a variety of programming languages. I am passionate about learning new technologies and staying up to date on industry trends and best practices. I am a motivated problem-solver and a highly organized individual, who pays attention to detail and always strives for excellence. I have strong communication and teamwork skills, and I am always eager to learn and grow my skills in the field.</p>
+                    </div>
+                  </section>
+                  
+                <div class="row">
+                    <div class="col about-educationcol">
+                        <div class="title">Education</div>
+                        <div class="about-timeline">
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title"><b>J.C Bose University Of Science & Technology</b></div>
+                                <div class="timeline-card-subtitle">B.tech &middot; Computer Science Engineering</div>
+                                <div class="timeline-card-time">2018-2022</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col about-experiencecol">
+                        <div class="title">Experience</div>
+                        <div class="about-timeline">
+
+                            <div class="timeline-card timeline-card-green">
+                                <div class="timeline-card-title"><b>Associate Software Developer</b></div>
+                                <div class="timeline-card-subtitle"><a href="https://tudip.com/" target="_blank">Tudip Technologies</a></div>
+                                <div class="timeline-card-content">&middot; Working as a Backend Developer (Ruby on Rails).</div>
+                                <div class="timeline-card-content">&middot; Involved in developing and implementing software application.</div>
+                                <div class="timeline-card-content">&middot; Developed and integrated Restful APIs using Ruby on
+                                    Rails and JSON API Resource.</div>
+                                <div class="timeline-card-content">&middot; Analyzed and improved application efficiency by optimizing queries and code in the existing application.</div>
+                                <div class="timeline-card-content">&middot; Experience with Test Driven Development and Behaviour Driven Development using Rspec.</div>
+                                <div class="timeline-card-content">&middot; Write functional, unit, and integration tests for application quality assurance.</div>                                
+
+                                <div class="timeline-card-time">Jun 2022 - Present</div>
+                            </div>
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title"><b>Machine Learning Intern</b></div>
+                                <div class="timeline-card-subtitle"><a href="https://www.increaseimmunity.org/" target="_blank">1stop.ai (Beat the virus, startup)</a></div>
+                                <div class="timeline-card-content">&middot; Created customized applications to make critical predictions, Recognition, and classifications.</div>
+                                <div class="timeline-card-content">&middot; Transformed raw data to conform to assumptions of the machine learning algorithm.</div>
+                                <div class="timeline-card-content">&middot; Worked with technology Python, Tensorflow, Keras, Panda, Numpy, Jupyter etc </div>
+                                <div class="timeline-card-time">Sep 2021 - Nov 2021</div>
+                            </div>
+
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title"><b>Web Developer</b></div>
+                                <div class="timeline-card-subtitle">Freelance</div>
+                                <div class="timeline-card-content">&middot; Designed, implemented, and tested software solutions and integrated with internal and externalservices.</div>
+                                <div class="timeline-card-content">&middot; Assisted with maintenance and upkeep of front-end applications.</div>
+                                <div class="timeline-card-content">&middot; Developed and deployed successful e-commerce strategiesinto clients' websites.</div>
+                                <div class="timeline-card-content">&middot; <b>Tools:</b> HTML5, CSS3, JS, Bootstrap, ReactJS, Django, Php, Git, Github, MySQL, PostgreSQL, RestAPI.</div>
+                                
+                                <div class="timeline-card-time">May 2019 - May 2022</div>
+                            </div>
+                            <div class="timeline-card timeline-card-blue">
+                                <div class="timeline-card-title"><b>Supervisor (HR)</b></div>
+                                <div class="timeline-card-subtitle"><a href="https://instagram.com/aashmanfoundation?igshid=YmMyMTA2M2Y=" target="_blank">Aashman Foundation</a></div>
+                                <div class="timeline-card-content">&middot; Lead teams and managed work of the organization.</div>
+                                <div class="timeline-card-content">&middot; Contributed to orientation and onboarding processes to assist new hires.</div>
+                                <div class="timeline-card-content">&middot; Supported work of HR team members by offering skilled clerical support for diverse office needs.</div>
+                                <div class="timeline-card-content">&middot; Brought in highly qualified applicants, targeted recruitment strategies on key candidate pools.</div>
+                                
+                                <div class="timeline-card-time">Jun 2020 - March 2021</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col about-skillcol">
+                        <div class="title">Skills</div>
+                        <div class="about-timeline">
+
+                            <!-- <div class="skills-title">Skills</div> -->
+                            <div class="skills-content">
+                                <div class="skills-tile">Python</div>
+                                <div class="skills-tile">Ruby on Rails</div>
+                                <div class="skills-tile">Data structure and algorithm</div>
+                                <div class="skills-tile">C</div>
+                                <div class="skills-tile">C++</div>
+                                <div class="skills-tile">Machine Learning</div>
+                                <div class="skills-tile">Data science</div>
+                                <div class="skills-tile">Django</div>
+                                <div class="skills-tile">HTML</div>
+                                <div class="skills-tile">CSS</div>
+                                <div class="skills-tile">JavaScript</div>
+                                <div class="skills-tile">Bootstrap</div>
+                                <div class="skills-tile">ReactJS</div>
+                                <div class="skills-tile">MySQL</div>
+                                <div class="skills-tile">HAML</div>
+                                <div class="skills-tile">ERB</div>
+                                <div class="skills-tile">Rspec</div>
+                                <div class="skills-tile">Git</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="project">
+            <div class="container project-container">
+                <div class="row">
+                    <div class="title">Projects</div>
+                </div>
+                <div class="row project-row">
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-website"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Movie Recommendation</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/movie-recommendation-app">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-summarizer"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Weather Forecast</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/weatherapp">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-2048"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Blog Website</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/rBlogByBootstrap">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-connect4"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Gmail Spam Detection</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/Machine_Learning/blob/gh-pages/gmailSpamDetect.ipynb">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-sushi"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Diabetes Prediction</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/Machine_Learning/blob/gh-pages/DiabetesPredictionProject.ipynb">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col project-col">
+                        <div class="project-card">
+                            <div class="project-card-cover project-card-pokemongo"></div>
+                            <div class="project-card-content">
+                                <div class="project-card-title">Credit Card Fraud Detection</div>
+                            </div>
+                            <a target="_blank" href="https://github.com/rajnishdascse/Machine_Learning/blob/gh-pages/Credit_card_fraud.ipynb">
+                                <div class="project-card-btn project-card-blackbutton">GitHub</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id = "footer" class="footer">
+                <p class="footer-text">Connect with me</p>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:7002282487" class="hover">+91-7002282487</a>
+                  </li>
+                  <li class="footer-item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:rajnishdas.official@gmail.com" class="hover">rajnishdas.official@gmail.com</a>
+                  </li>
+                </ul>
+                <!-- <p style="color:#e4e0e0; text-align: center; margin: auto;">Made with &#x1F496; by Rajnish Das</p> -->
+            
+                <script>
+                    var audio = document.getElementById("background-music");
+                    audio.volume = 0.5;
+                </script>
+        </div>    
+        <!-- <p style="color:#e4e0e0; text-align: center; margin: 1.5px;">Made with &#x1F496; by Rajnish Das</p> -->
+        <p class="made-with">Made with &#x1F496; by Rajnish Das</p>
+
+    </body>
+</html>
