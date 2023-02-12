@@ -653,7 +653,8 @@ a, a:active, a:hover {
     color:beige;
     font-size: 18px;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     margin-bottom: 20px;
     /* animation: text-animation 3s ease-in-out forwards; */
     animation: text-animation 5s ease-in-out forwards;
@@ -671,6 +672,12 @@ a, a:active, a:hover {
     }
   }
   
+@media (max-width:575px) {
+        .about-text {
+            font-size: 12px;
+        }
+    }
+
 
 /* -----------link hover effect---------- */
 
